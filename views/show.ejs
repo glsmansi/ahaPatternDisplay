@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="./css/index.css" />
+
+  <body>
+    <!-- <div class="row"> -->
+    <h1>Thriller</h1>
+    <div class="scrolling-wrapper">
+      <% for(let i of thriller ){ %>
+
+      <!-- <div class="column"> -->
+      <div class="card">
+        <img src="../<%= i.images.url %> " alt="Avatar" style="width: 100%" />
+
+        <!-- <div class="container"> -->
+        <p><%= i.movieName %></p>
+        <!-- <i class="far fa-thumbs-up"><span></span></i> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+      </div>
+
+      <% } %>
+    </div>
+
+    <h1>Comedy</h1>
+    <div class="scrolling-wrapper">
+      <% for(let i of comedy ){ %>
+      <div class="card">
+        <img src="../<%= i.images.url %> " alt="Avatar" style="width: 100%" />
+
+        <div class="container">
+          <p><%= i.movieName %></p>
+          <!-- <i class="far fa-thumbs-up"><span></span></i> -->
+        </div>
+      </div>
+
+      <% }%>
+    </div>
+  </body>
+</html>

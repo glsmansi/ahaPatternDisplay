@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Upload</title>
+  </head>
+  <link rel="stylesheet" href="./css/upload.css" />
+
+  <body>
+    <div class="hero">
+        <div class="container">
+            <form action="/upload " method="POST" enctype="multipart/form-data">
+            <div class="form">
+                <label for="images">Image Upload</label>
+                <input type="file" id="images" name="image" />
+                <label for="movieName">Movie Name</label>
+                <input type="text" id="movieName" name="post[movieName]" />
+                <label for="genre">Genre</label>
+                <select name="post[genre]" id="genre">
+                <option name="post[thriller]" value="thriller">thriller</option>
+                <option name="post[comedy]" value="comedy">comedy</option>
+                </select>
+                <button class="btn">Add Movie</button>
+            </div>
+            </form>
+        </div>
+    <div>
+  </body>
+</html>
